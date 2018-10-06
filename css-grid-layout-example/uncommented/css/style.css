@@ -12,12 +12,22 @@
   align-content: center;
   padding: 15px;
 }
+.banner {
+  font-size: 2vw;
+}
 
 .grid-container {
+<<<<<<< HEAD:css-grid-layout-example/uncommented/css/style.css
   display: grid; 
   grid-gap: 15px; 
   grid-template-columns: 200px 1fr 200px; 
   grid-template-rows: 100px 1fr 100px; 
+=======
+   display: grid;
+   grid-gap: 15px;
+   grid-template-columns: 200px 1fr 200px;
+   grid-template-rows: 6vw 1fr 100px;
+>>>>>>> 091b3c5... Banner has font size based on view-width:css-grid-layout-example/css/style.css
   grid-template-areas: "header header header"
   "navigation main sidebar"
   "footer footer footer"; 
@@ -37,7 +47,7 @@
 @media screen and (max-width: 767px) {
   .grid-container {
     grid-template-columns: 1fr 150px;
-    grid-template-rows: 100px 50px 1fr 100px;
+    grid-template-rows: 6vw 50px 1fr 100px;
     grid-template-areas: "header header"
       "navigation navigation"
       "main sidebar"
@@ -48,7 +58,7 @@
 @media screen and (max-width: 480px) {
   .grid-container {
     grid-template-columns: 100%;
-    grid-template-rows: 100px 50px 3fr 1fr 100px;
+    grid-template-rows: 6vw 50px 3fr 1fr 100px;
     grid-template-areas: "header"
       "navigation"
       "main"
